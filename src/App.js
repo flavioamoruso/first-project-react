@@ -6,7 +6,9 @@ function App() {
   const [people, setPeople] = useState(data);
 
   const removeItem = (id) => {
-    setPeople((oldValue) => oldValue.filter((value) => value.id !== id));
+    // setPeople((oldValue) => oldValue.filter((value) => value.id !== id));
+    let newPeople=people.filter(el=>el.id!==id)
+    setPeople(newPeople)
   };
 
   const reloadAllItem = () => {
