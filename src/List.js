@@ -1,4 +1,5 @@
 import React from "react";
+import { MdDelete } from "react-icons/md";
 
 
 const List = (props) => {
@@ -34,7 +35,7 @@ const List = (props) => {
             <h4>{nome}</h4>
             <button className="btn" onClick={()=>removeItem(id)}>
             {" "}
-            x
+            <MdDelete className="icon" />
             
             </button>
             
